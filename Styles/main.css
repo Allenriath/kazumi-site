@@ -1,0 +1,159 @@
+/* General Settings*/
+
+body {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
+    background: black;
+    color: white;
+    border:0px;
+    width:100%;
+    height:100%;
+    margin:0px;
+    display: grid;
+    grid-template-rows: 3fr 17fr;
+    grid-template-areas: "navbar"
+                         "container";                    
+    position: absolute;
+}
+
+h2{
+    text-align: center;
+}
+
+a{
+    font-family:inherit;
+    color:inherit;
+}
+
+/* nav menu settings */
+input{
+    display: none;
+}
+
+.navbar{
+    font-family: 'Architects Daughter', cursive;
+    background-color:black;
+    color:white;
+    justify-content: space-around;
+    grid-area: navbar;
+    padding: .5rem;
+}
+
+/*Carousel base container settings*/
+
+#baseContainer {
+    grid-area: container;
+    overflow:hidden;
+}
+
+.carousel-inner{
+    height:100%;
+}
+
+.carousel-item{
+    overflow:auto;
+    height:100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+.carousel-item::-webkit-scrollbar {
+    display: none;
+    }
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    height:100%;
+    display:block;
+}
+
+
+/*homepage settings*/
+#home{
+    text-align: center;
+}
+#home-wraper{
+    display:grid;
+    grid-template-rows: 5fr 1fr;
+    height: 100%;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#imgHome{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Page 2 settings*/
+
+/*Page 3 settings*/
+
+.container{
+    display:block;
+    text-align: center;
+    
+}
+#paypal{
+    width:25%;
+    height:25%;
+}
+
+
+/*Page 4 settings*/
+#project-container{
+    display: grid;
+    height:100%;
+    grid-template-rows: 70% 25%;
+}   
+    
+
+
+/*Project description*/
+#description-wrapper{
+    height:100%;
+}
+.project-description{
+    display: none;
+    position: relative;
+    overflow: scroll;
+    top:0px;
+    opacity:0;
+    max-width: 100%;
+    height:100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.project-description > img{
+    height:auto;
+    max-width:100%;
+}
+
+.project-description::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*Project Dialer*/
+.selector-wrapper{
+    display:grid;
+    align-items:center;
+    height:100%;
+    width:100%;
+   
+}
+
+
+
+
+
+
+
+
