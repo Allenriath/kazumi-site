@@ -25,6 +25,13 @@ a{
     font-family:inherit;
     color:inherit;
 }
+#post_links{
+    text-decoration: underline;
+}
+
+#post_links:hover{
+    color:blue;
+}
 
 /* nav menu settings */
 input{
