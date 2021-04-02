@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#posts_link").click(function(){
-        $("#home-wraper").load("https://allenriath.github.io/kazumi-site/posts.html", function() {
+        $("#test").load("https://allenriath.github.io/kazumi-site/posts.html", function() {
             alert("Load has been performed");
         });
     });
