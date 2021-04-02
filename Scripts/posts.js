@@ -4,6 +4,8 @@ $(document).ready(function(){
             if ( status == "error") {
                 var msg = "Error while loading file: ";
                 console.log( msg + xhr.status + " " + xhr.statusText);
+            } else {
+                console.log("It's done! ...maybe...");
             }
         });
     });
