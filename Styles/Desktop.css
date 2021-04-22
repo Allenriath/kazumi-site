@@ -1,3 +1,15 @@
+{block:IndexPage}
+/*dontshow code by @bychloethemes*/
+.{block:TagPage}x{/block:TagPage}{block:SearchPage}x{/block:SearchPage}posts{w
+   display:none;
+   margin:0;
+   padding:0;
+   width:0;
+   border:0;
+   outline:none;
+}
+{/block:IndexPage}
+
 /* General Settings*/
 
 body {
