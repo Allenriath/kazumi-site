@@ -190,7 +190,9 @@ input{
 .posts {display:none;}
 {/block:IndexPage}
 
-
+{block:TagPage}
+.posts {display:block;}
+{/block:TagPage}
 
 
 
