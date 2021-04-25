@@ -191,10 +191,6 @@ input{
 .asks {display:none;}
 {/block:IndexPage}
 
-{block:TagPage}
-.reblogs {display:block;}
-.reblogs {display:block;}
-{/block:TagPage}
 
 
 
