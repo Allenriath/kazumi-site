@@ -187,8 +187,7 @@ input{
 }
 
 {block:IndexPage}
-.reblogs {display:none;}
-.asks {display:none;}
+.posts {display:none;}
 {/block:IndexPage}
 
 
