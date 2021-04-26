@@ -186,13 +186,6 @@ input{
     padding: 0 0 5% 5%;
 }
 
-{block:IndexPage}
-.posts {display:none;}
-{/block:IndexPage}
-
-{block:TagPage}
-.posts {display:block;}
-{/block:TagPage}
 
 
 
