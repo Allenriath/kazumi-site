@@ -187,12 +187,13 @@ input{
 }
 
 {block:IndexPage}
-.posts {display:none;}
+
+
+.{block:TagPage}x{/block:TagPage}{block:SearchPage}x{/block:SearchPage}posts {display:none;}
+
 {/block:IndexPage}
 
-{block:TagPage}
-.posts {display:block;}
-{/block:TagPage}
+
 
 
 
