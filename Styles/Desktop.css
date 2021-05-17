@@ -14,7 +14,7 @@ body {
     grid-template-areas:    "navbar"
                             "container"
                             ".";
-    position: fixed;
+ position: absolute;
 }
 
 h2{
@@ -24,13 +24,6 @@ h2{
 a{
     font-family:inherit;
     color:inherit;
-}
-#post_links{
-    text-decoration: underline;
-}
-
-#post_links:hover{
-    color:blue;
 }
 
 /* nav menu settings */
@@ -56,8 +49,6 @@ input{
 
 .carousel-inner{
     height:100%;
-
-
 }
 
 .carousel-item{
@@ -124,7 +115,6 @@ input{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3%;
     overflow: hidden;
-
 }
 
 
@@ -165,8 +155,6 @@ input{
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-
-
 }
 .selector-wrapper::-webkit-scrollbar {
     display: none;

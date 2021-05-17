@@ -13,7 +13,8 @@ body {
     grid-template-rows: 3fr 17fr;
     grid-template-areas: "navbar"
                          "container";                    
-    position: absolute;
+    
+position: absolute;
 }
 
 h2{
@@ -23,14 +24,6 @@ h2{
 a{
     font-family:inherit;
     color:inherit;
-}
-
-#post_links{
-    text-decoration: underline;
-}
-
-#post_links:hover{
-    color:blue;
 }
 
 /* nav menu settings */
@@ -119,6 +112,9 @@ input{
     display: grid;
     height:100%;
     grid-template-rows: 70% 25%;
+
+
+
 }   
     
 
@@ -126,6 +122,7 @@ input{
 /*Project description*/
 #description-wrapper{
     height:100%;
+
 }
 .project-description{
     display: none;
@@ -152,11 +149,10 @@ input{
 /*Project Dialer*/
 .selector-wrapper{
     display:grid;
-    align-items:center;
+    align-items: center;
     height:100%;
     width:100%;
-   
-}
+  }
 
 
 
