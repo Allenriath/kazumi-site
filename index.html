@@ -28,8 +28,20 @@
 
     </head>
 
+<style>
+
+.tags_page{
+    height:100vh;
+    width:100vh;
+}
+
+</style>
 
     <body>
+    
+    
+<!-- Everthing inside the Block:HomePage section is related to your initial page, the 4 page carousel. The content which is reached from posts link on the initial page will be located on the Block:Tagged section. -->
+    
 {block:HomePage}
         <form id="top_links">    
             <input type="radio" name="group1" id="switch_1" value="1" checked="checked" />
@@ -261,88 +273,91 @@
 {/block:HomePage}
 
 
-{block:TagPage}<div class="tags">
+
+
+
+<!-- This is where the content from within your Posts link starts. -->
+
+
+
+{block:TagPage}<div class="tags_page">
     
-    <ul class="posts">
         {block:Posts}
-        <div>
-        {block:Text}
-                <li class="post text">
+            {block:Text}
+                <div class="post text">
                     {block:Title}
                         <h3><a href="{Permalink}">{Title}</a></h3>
                     {/block:Title}{Body}
-                </li>
+                </div>
             {/block:Text}{block:Photo}
-                <li class="post photo">
+                <div class="post photo">
                     <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
     
                     {block:Caption}
                         <div class="caption">{Caption}</div>
                     {/block:Caption}
-                </li>
+                </div>
             {/block:Photo}{block:Panorama}
-                <li class="post panorama">
+                <div class="post panorama">
                     {LinkOpenTag}
                         <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
                     {LinkCloseTag}{block:Caption}
                         <div class="caption">{Caption}</div>
                     {/block:Caption}
-                </li>
+                </div>
             {/block:Panorama}{block:Photoset}
-                <li class="post photoset">
+                <div class="post photoset">
                     {Photoset-500}{block:Caption}
                         <div class="caption">{Caption}</div>
                     {/block:Caption}
-                </li>
+                </div>
             {/block:Photoset}{block:Quote}
-                <li class="post quote">
+                <div class="post quote">
                     "{Quote}"
     
                     {block:Source}
                         <div class="source">{Source}</div>
                     {/block:Source}
-                </li>
+                </div>
             {/block:Quote}{block:Link}
-                <li class="post link">
+                <div class="post link">
                     <a href="{URL}" class="link" {Target}>{Name}</a>
     
                     {block:Description}
                         <div class="description">{Description}</div>
                     {/block:Description}
-                </li>
+                </div>
             {/block:Link}{block:Chat}
-                <li class="post chat">
+                <div class="post chat">
                     {block:Title}
                         <h3><a href="{Permalink}">{Title}</a></h3>
                     {/block:Title}
     
                     <ul class="chat">
                         {block:Lines}
-                            <li class="{Alt} user_{UserNumber}">
+                            <div class="{Alt} user_{UserNumber}">
                                 {block:Label}
                                     <span class="label">{Label}</span>
                                 {/block:Label}{Line}
-                            </li>
+                            </div>
                         {/block:Lines}
                     </ul>
-                </li>
+                </div>
             {/block:Chat}{block:Video}
-                <li class="post video">
+                <div class="post video">
                     {Video-500}{block:Caption}
                         <div class="caption">{Caption}</div>
                     {/block:Caption}
-                </li>
+                </div>
             {/block:Video}{block:Audio}
-                <li class="post audio">
+                <div class="post audio">
                     {AudioEmbed}{block:Caption}
                         <div class="caption">{Caption}</div>
                     {/block:Caption}
-                </li>
+                </div>
             {/block:Audio}
-            </div>
-            {/block:Posts}
-    </ul>
-
+        {/block:Posts}
+    
     
 </div>{/block:TagPage}
 
@@ -363,7 +378,6 @@
         <script src="https://static.tumblr.com/51xlt4v/Phdqoowfe/tiny-carousel.conf.js"></script>
         <script src="https://static.tumblr.com/51xlt4v/OTCqoowf2/projects.js"></script>
         
-        <script src="https://allenriath.github.io/kazumi-site/Scripts/posts.js"></script>
-        
+
     </body>
 </html>

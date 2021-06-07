@@ -14,7 +14,7 @@ body {
     grid-template-areas: "navbar"
                          "container";                    
     
-position: absolute;
+    position: absolute;
 }
 
 h2{
