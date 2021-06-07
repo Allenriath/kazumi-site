@@ -4824,7 +4824,7 @@ nav ul li a {
   padding: 15px 100px;
   min-height: 270px;
   margin-top: -250px;
-  background: #fff;
+  background: #000;
 }
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .post-content {
