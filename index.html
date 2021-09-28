@@ -156,9 +156,18 @@
 
         <link href='https://fonts.googleapis.com/css?family={select:Text Font}:300,400,500,600' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family={select:Heading Font}:400,300,200,100' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://static.tumblr.com/jxjb7si/j6Qo72ng1/app.css">
+        <link rel="stylesheet" href="https://allenriath.github.io/kazumi-site/Styles/original1.css">
+        
 
         {/block:TagPage}
+
+        {block:PermalinkPage}
+
+        <link href='https://fonts.googleapis.com/css?family={select:Text Font}:300,400,500,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family={select:Heading Font}:400,300,200,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://allenriath.github.io/kazumi-site/Styles/original1.css">
+        
+        {/block:PermalinkPage}
 
         {block:HomePage}
                     
@@ -180,11 +189,223 @@
 	
 	    body > iframe:first-child, body > iframe:nth-child(2) {display: none;}
     
-    
-        {block:TagPage}    
-    
-        {/block:TagPage}
+        <block:TagPage>
+                        header .logo a img{
+                height: {text:Height of logo}px;
+            }
 
+            body{
+                background: #000;
+                font-family: {select:Text Font};
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            header nav ul li a{
+            font-family: {select:Heading Font};
+            }
+
+            .general-background-color, .mobile header, .parallax-mirror, .top-slider .swiper-wrapper .slide, .top-slider .swiper-wrapper .slide .inner .tags a, .posts-grid .post .link h4, .posts-grid .post .quote blockquote, .posts-grid .post .answer .question .asker-question, .pagination .load-more, .pagination .normal-pagination span, .pagination .normal-pagination a, .post-content .post .link h4, .post-content .post .quote blockquote, .post-content .post .answer .question .asker-question, .photo-links .link, .about-me .content, .instagram-feed h5, footer.bottom, .slicknav_menu {
+            background: {color:General color};
+            }
+
+            .infiniteScrollPagiantion #infscr-loading{
+                color: {color:General color};
+            }
+
+            .posts-grid .post .answer .question .asker-question .tringle, .post-content .post .answer .question .asker-question .tringle{
+                border-color: transparent transparent {color:General color} transparent;  
+            }    
+
+            header nav{
+                background: rgba({RGBcolor:General color},0.3);
+            }
+
+            .posts-grid .post > *{
+                border-bottom: 1px solid {color:General color};
+            }
+
+            .posts-grid .post .caption a, .posts-grid .post .content a{
+                color: {color:Accent color};
+                border-bottom: 1px solid {color:Accent color};
+            }
+
+            .font-Weight, body, header .logo p, .top-slider .swiper-wrapper .slide .inner .tags a, .top-slider .swiper-wrapper .slide .inner .date, .posts-grid .post, .pagination .load-more, .pagination .normal-pagination span, .pagination .normal-pagination a, .post-content, .photo-links .link .inner p, .about-me .content p, footer.bottom .row {
+                font-weight: {select:Text Font weight};
+            }
+
+            .accent-background-color, .pagination .load-more:hover, .pagination .normal-pagination span, .pagination .normal-pagination a:hover, .comments-and-notes .tabs li a:hover, .slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover, .pace .pace-progress {
+                background: {color:Accent color};
+            }
+
+            .accent-text-color, .pace .pace-progress, .comments-and-notes #notes a, .post-content a{
+                color: {color:Accent color};
+            }    
+
+            blockquote{
+                border-left: 1px solid rgba({RGBcolor:General color},0.3);
+            }
+
+            .text-color-1, header, header a, header a:hover, .posts-grid .post .link h4 a, .posts-grid .post .quote blockquote, .posts-grid .post .quote blockquote *, .posts-grid .post .answer .question .asker-question,.post-content .post .answer .question .asker-question, .pagination .load-more, .pagination .normal-pagination span, .pagination .normal-pagination a, .post-content .post .link h4 a, .post-content .post .quote blockquote, .post-content .post .quote blockquote *, .post-content .post .answer .question, .photo-links .link .inner, .photo-links .link .inner h4 a, .comments-and-notes .tabs li a, .about-me .content, .about-me .content h3, .about-me .content p, .about-me .content .social-icons a, .instagram-feed h5 a, footer.bottom .row, .slicknav_nav a, .slicknav_nav a:hover, .posts-grid .post .answer .question .asker-question .asker a, .post-content .post .answer .question .asker-question .asker a {
+                color: {color:Text color 1};
+            }
+
+            .fill-color-1, header .logo .social-icons a svg, header .logo .search-icon svg, .posts-grid .post .link h4 svg, .post-content .post .link h4 svg, .about-me .content .social-icons a svg, .instagram-feed h5 a svg,.posts-grid .post .quote blockquote svg,
+            .post-content .post .quote blockquote svg {
+                fill: {color:Text color 1};
+            }
+
+            .border-bottom-color-1, header nav, nav, .photo-links .link .inner h4 a {
+                border-bottom: 1px solid {color:Text color 1};
+            }
+
+            .border-full-color-1, .top-slider .swiper-wrapper .slide .inner {
+                border: 1px solid {color:Text color 1};
+            }   
+
+            .text-color-2, .posts-grid .post, .posts-grid .post blockquote *, .post-content blockquote *, .posts-grid .post .text h4 a, .post-content .post .text h4 a{
+                color: {color:Text color 2};
+            }    
+
+            {block:IfNotEnableParallaxEffect}        
+                header{
+                    
+                    background: {color:General color};  
+                }
+
+                header .header-bg{
+                background: url('{image:Header Image}') no-repeat center bottom;
+                }
+
+            {block:IfNotEnableParallaxEffect}
+
+
+            .post-content{
+                background:#000;
+            }
+
+            nav label{
+                color:white;
+            }
+
+            nav {
+                border-bottom:0px;
+            }
+        </block:TagPage>
+
+        <block:Permalink>
+                        header .logo a img{
+                height: {text:Height of logo}px;
+            }
+
+            body{
+                background: #000;
+                font-family: {select:Text Font};
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            header nav ul li a{
+            font-family: {select:Heading Font};
+            }
+
+            .general-background-color, .mobile header, .parallax-mirror, .top-slider .swiper-wrapper .slide, .top-slider .swiper-wrapper .slide .inner .tags a, .posts-grid .post .link h4, .posts-grid .post .quote blockquote, .posts-grid .post .answer .question .asker-question, .pagination .load-more, .pagination .normal-pagination span, .pagination .normal-pagination a, .post-content .post .link h4, .post-content .post .quote blockquote, .post-content .post .answer .question .asker-question, .photo-links .link, .about-me .content, .instagram-feed h5, footer.bottom, .slicknav_menu {
+            background: {color:General color};
+            }
+
+            .infiniteScrollPagiantion #infscr-loading{
+                color: {color:General color};
+            }
+
+            .posts-grid .post .answer .question .asker-question .tringle, .post-content .post .answer .question .asker-question .tringle{
+                border-color: transparent transparent {color:General color} transparent;  
+            }    
+
+            header nav{
+                background: rgba({RGBcolor:General color},0.3);
+            }
+
+            .posts-grid .post > *{
+                border-bottom: 1px solid {color:General color};
+            }
+
+            .posts-grid .post .caption a, .posts-grid .post .content a{
+                color: {color:Accent color};
+                border-bottom: 1px solid {color:Accent color};
+            }
+
+            .font-Weight, body, header .logo p, .top-slider .swiper-wrapper .slide .inner .tags a, .top-slider .swiper-wrapper .slide .inner .date, .posts-grid .post, .pagination .load-more, .pagination .normal-pagination span, .pagination .normal-pagination a, .post-content, .photo-links .link .inner p, .about-me .content p, footer.bottom .row {
+                font-weight: {select:Text Font weight};
+            }
+
+            .accent-background-color, .pagination .load-more:hover, .pagination .normal-pagination span, .pagination .normal-pagination a:hover, .comments-and-notes .tabs li a:hover, .slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover, .pace .pace-progress {
+                background: {color:Accent color};
+            }
+
+            .accent-text-color, .pace .pace-progress, .comments-and-notes #notes a, .post-content a{
+                color: {color:Accent color};
+            }    
+
+            blockquote{
+                border-left: 1px solid rgba({RGBcolor:General color},0.3);
+            }
+
+            .text-color-1, header, header a, header a:hover, .posts-grid .post .link h4 a, .posts-grid .post .quote blockquote, .posts-grid .post .quote blockquote *, .posts-grid .post .answer .question .asker-question,.post-content .post .answer .question .asker-question, .pagination .load-more, .pagination .normal-pagination span, .pagination .normal-pagination a, .post-content .post .link h4 a, .post-content .post .quote blockquote, .post-content .post .quote blockquote *, .post-content .post .answer .question, .photo-links .link .inner, .photo-links .link .inner h4 a, .comments-and-notes .tabs li a, .about-me .content, .about-me .content h3, .about-me .content p, .about-me .content .social-icons a, .instagram-feed h5 a, footer.bottom .row, .slicknav_nav a, .slicknav_nav a:hover, .posts-grid .post .answer .question .asker-question .asker a, .post-content .post .answer .question .asker-question .asker a {
+                color: {color:Text color 1};
+            }
+
+            .fill-color-1, header .logo .social-icons a svg, header .logo .search-icon svg, .posts-grid .post .link h4 svg, .post-content .post .link h4 svg, .about-me .content .social-icons a svg, .instagram-feed h5 a svg,.posts-grid .post .quote blockquote svg,
+            .post-content .post .quote blockquote svg {
+                fill: {color:Text color 1};
+            }
+
+            .border-bottom-color-1, header nav, nav, .photo-links .link .inner h4 a {
+                border-bottom: 1px solid {color:Text color 1};
+            }
+
+            .border-full-color-1, .top-slider .swiper-wrapper .slide .inner {
+                border: 1px solid {color:Text color 1};
+            }   
+
+            .text-color-2, .posts-grid .post, .posts-grid .post blockquote *, .post-content blockquote *, .posts-grid .post .text h4 a, .post-content .post .text h4 a{
+                color: {color:Text color 2};
+            }    
+
+            {block:IfNotEnableParallaxEffect}        
+                header{
+                    
+                    background: {color:General color};  
+                }
+
+                header .header-bg{
+                background: url('{image:Header Image}') no-repeat center bottom;
+                }
+
+            {block:IfNotEnableParallaxEffect}
+
+
+            .post-content{
+                background:#000;
+            }
+
+            nav label{
+                color:white;
+            }
+
+            nav {
+                border-bottom:0px;
+            }
+        </block:PermalinkPage>
+    
+       
     </style>
 
 </head>
