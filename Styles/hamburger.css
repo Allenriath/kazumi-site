@@ -1,5 +1,6 @@
 /* Style the navigation menu */
 .topnav {
+    z-index:9999;
     overflow: hidden;
     background-color: #000;
     position: fixed;
