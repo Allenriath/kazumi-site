@@ -3,7 +3,8 @@
     overflow: hidden;
     background-color: #000;
     position: fixed;
-    top:0
+    width:100%;
+    top:0;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
