@@ -149,7 +149,8 @@
 
 
         <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet" />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 
 
         {block:TagPage}
@@ -157,7 +158,7 @@
         <link href='https://fonts.googleapis.com/css?family={select:Text Font}:300,400,500,600' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family={select:Heading Font}:400,300,200,100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://allenriath.github.io/kazumi-site/Styles/original1.css">
-        
+
 
         {/block:TagPage}
 
@@ -167,7 +168,12 @@
         <link href='https://fonts.googleapis.com/css?family={select:Heading Font}:400,300,200,100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://allenriath.github.io/kazumi-site/Styles/original1.css">
         
+      
+        
         {/block:PermalinkPage}
+
+
+
 
         {block:HomePage}
                     
@@ -899,8 +905,23 @@
     {/block:TagPage}
 
     {block:PermalinkPage}
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
         <div class="post-content">
-            {block:Posts}
+          {block:Posts}
             <article class="post">
                 {block:Text}
                 <div class="text">
