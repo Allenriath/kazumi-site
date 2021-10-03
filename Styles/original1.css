@@ -4781,9 +4781,7 @@ nav ul li a {
   }
 }
 .photo-links .link,
-.post-content {
-  box-shadow: 0 10px 17.85px 3.15px rgba(255, 255, 255, 0.3);
-}
+
 .pagination,
 .post-content footer {
   display: -webkit-flex;
@@ -4823,7 +4821,7 @@ nav ul li a {
   font-size: 1.125rem;
   padding: 15px 100px;
   min-height: 270px;
-  margin-top: 0px;
+  margin-top: 5vh;
   background: #fff;
 }
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
