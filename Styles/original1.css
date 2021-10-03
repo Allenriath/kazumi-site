@@ -4821,7 +4821,7 @@ nav ul li a {
   font-size: 1.125rem;
   padding: 15px 100px;
   min-height: 270px;
-  margin-top: 5vh;
+  margin-top: 0px;
   background: #fff;
 }
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
@@ -5005,7 +5005,7 @@ nav ul li a {
   margin-left: 10px;
 }
 .post-content .tags {
-  margin-top: 30px;
+  margin-top: 5vh;
   font-size: 0.85rem;
 }
 .post-content .tags a {
