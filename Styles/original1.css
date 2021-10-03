@@ -4521,7 +4521,7 @@ nav ul li a {
 }
 .posts-grid {
   max-width: 75rem;
-  margin: 30px auto;
+  margin: 10vh auto;
   word-wrap: break-word;
 }
 .posts-grid.three-columns .post {
@@ -5005,7 +5005,7 @@ nav ul li a {
   margin-left: 10px;
 }
 .post-content .tags {
-  margin-top: 5vh;
+  margin-top: 30px;
   font-size: 0.85rem;
 }
 .post-content .tags a {
