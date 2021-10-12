@@ -10,7 +10,7 @@ body {
     height:100%;
     margin:0px;
     display: grid;
-    grid-template-rows: 3fr 17fr;
+    grid-template-rows: 2fr 17fr;
     grid-template-areas: "navbar"
                          "container";                    
     
